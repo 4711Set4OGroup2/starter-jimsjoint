@@ -24,7 +24,7 @@ class Order extends Application {
         $neworder->date = date();
         $neworder->status = 'a';
         $neworder->total = 0;
-        $this->orders-add($neworder);
+        $this->orders->add($neworder);
 
         redirect('/order/display_menu/' . $order_num);
     }
